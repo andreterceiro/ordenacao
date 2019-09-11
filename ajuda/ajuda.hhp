@@ -1,0 +1,26 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=ajuda.chm
+Contents file=Table of Contents.hhc
+Default Window=janelanome
+Default topic=help.htm
+Display compile progress=No
+Index file=Index.hhk
+Language=0x416 Português (brasileiro)
+Title=Ordenação v 2.0 - Ajuda 
+
+[WINDOWS]
+janelanome=,"Table of Contents.hhc","Index.hhk","help.htm",,,,,,0x2100,,0x3006,,,,,,,,0
+
+
+[FILES]
+help.htm
+
+[ALIAS]
+IDH_principal=help.htm ; comentario da  janela alias
+
+[MAP]
+#include dos.h
+
+[INFOTYPES]
+

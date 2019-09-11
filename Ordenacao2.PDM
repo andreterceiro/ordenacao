@@ -1,0 +1,121 @@
+[Root]
+Most Recent Package=Ordenação Setup
+
+
+[Package|Ordenação Setup|Ordenacao]
+Icon1=Ordenacao2_0.exe
+Title1=Ordenacao v2.0
+StartIn1=$(AppPath)\2_0
+Key1=Icon1
+
+[Package|Ordenação Setup|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Projetos\terminados\ordenacao\nova\Package
+
+[Package|Ordenação Setup|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Ordenação Setup|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Ordenação Setup|Files Found]
+ajuda.chm=D:\Projetos\terminados\ordenacao\nova\ajuda\ajuda.chm
+Ordenacao2_0.exe=C:\WINDOWS\Desktop\Ordenacao2_0.exe
+
+[Package|Ordenação Setup|Files Released]
+ajuda.CHI=
+Ordenacao2.exe=
+
+[Package|Ordenação Setup|Missing Dependency Information]
+C:\WINDOWS\Desktop\Ordenacao2.exe=
+C:\WINDOWS\Desktop\Ordenacao2_0.exe=
+
+[Package|Ordenação Setup|Out-of-Date Dependency Information]
+
+[Package|Ordenação Setup|Files Added]
+ajuda.chm=
+ordenacao2_0.exe=
+
+[Package|Ordenação Setup|Files Removed]
+c:\windows\desktop\projectordenacao.exe=
+
+[Package|Ordenação Setup|Files In Project]
+C:\WINDOWS\Desktop\ProjectOrdenacao.exe=No
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\hhctrl.ocx=Yes
+C:\WINDOWS\SYSTEM\itss.dll=Yes
+C:\WINDOWS\SYSTEM\itircl.dll=Yes
+C:\WINDOWS\SYSTEM\hh.exe=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\Projetos\terminados\ordenacao\nova\ajuda\ajuda.chm=Yes
+C:\WINDOWS\Desktop\Ordenacao2_0.exe=Yes
+
+[Package|Ordenação Setup|Configure Registry Files]
+Applicable=No
+
+[Package|Ordenação Setup|Configure Remote Servers]
+Applicable=No
+
+[Package|Ordenação Setup|Install Locations]
+C:\WINDOWS\Desktop\ProjectOrdenacao.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\hhctrl.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\itss.dll=$(WinSysPath)
+C:\WINDOWS\SYSTEM\itircl.dll=$(WinSysPath)
+C:\WINDOWS\SYSTEM\hh.exe=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\Projetos\nao terminados\uteis\em andamento\ordenacao\nova\ajuda\ajuda.chm=$(AppPath)\ajuda
+C:\WINDOWS\Desktop\Ordenacao2.exe=$(AppPath)
+D:\Projetos\terminados\ordenacao\nova\ajuda\ajuda.chm=$(AppPath)\2_0\Ajuda
+C:\WINDOWS\Desktop\Ordenacao2_0.exe=$(AppPath)\2_0
+
+[Package|Ordenação Setup|Configure Shared Files]
+Applicable=Yes
+C:\WINDOWS\Desktop\ProjectOrdenacao.exe=No
+D:\Projetos\nao terminados\uteis\em andamento\ordenacao\nova\ajuda\ajuda.chm=No
+C:\WINDOWS\Desktop\Ordenacao2.exe=No
+D:\Projetos\terminados\ordenacao\nova\ajuda\ajuda.chm=No
+C:\WINDOWS\Desktop\Ordenacao2_0.exe=No
+
+[Package|Ordenação Setup|Distribution]
+Type=single
+Size=
+Title=Ordenação
+
+[Package|Ordenação Setup|Package]
+PackageFolder=D:\Projetos\terminados\ordenacao\nova\Package
+ProjectFolder=D:\Projetos\terminados\ordenacao\nova
+ServerSideCab=
+File1=D:\Projetos\terminados\ordenacao\nova\Package\setup.exe
+File2=D:\Projetos\terminados\ordenacao\nova\Package\Setup.Lst
+File3=D:\Projetos\terminados\ordenacao\nova\Package\ProjectOrdenacao.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Ordenação Setup|IconGroups]
+Group0=Ordenação
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Ordenação Setup|Ordenação]
+Icon1=2_0\Ordenacao2_0.exe
+Title1=Ordenacao v2.0
+StartIn1=$(AppPath)
+Key1=Icon1

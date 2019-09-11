@@ -1,0 +1,330 @@
+<html>
+<head> 
+   <title> Ordenação - arquivo de ajuda </title>
+</head>
+<body background=ico4.bmp >
+<font face="comic sans ms" size=3 color="0000aa">
+
+<p align = center><font size=6 color="00aa00"> Ajuda do jogo Ordenação - V 2.0 </font> </p> <br><br>
+
+<p align =center><A name=indice> <font size=6 color = 000000>Índice</font></p>
+<ul> 
+<li><A href="#introducao">Introdução</a>
+<li><A href=#objetivo>Objetivo</a>
+<li><A href=#novasVersoes>Novas versões e alterações</a>
+<br><br>
+<li><A href=#componentes>Tela principal</a>
+<ul>
+	<li><A href=#componentes>Componentes</a>
+		<ul>
+		<li> <A href="#tabuleiro">Tabuleiro</a>
+		<li> <A href="#primeira">Primeira fileira de caixas</a>
+		<li> <A href="#segunda">Segunda fileira de caixas</a>
+		<li> <A href="#Comparar">Botão "Comparar"</a>
+		<li> <A href="#Limpar">Botão "Limpar"</a>
+		<li> <A href="#Terminei!">Botão "Terminei!"</a>
+		<li> <A href="#Reiniciar">Botão "Reiniciar"</a>
+		<li> <A href="#<<">Botões "<<" e ">>"</a>
+		<li> <A href="#comparacoes">Label "Comparacoes feitas"</a>
+		<li> <A href="#Tempo">Label "Tempo"</a>
+		<li> <A href="#lista">Lista "Histórico de comparações"</a>
+		<li> <A href="#check">Checkbox "Arrastar"</a>
+		</ul>
+	<li><a href="#menus"> Os menus</a>
+		<ul>
+		<li> <a href="#mengeral">Geral</a>
+			<Ul>
+			<li><a href="#menreiniciar"> Reiniciar</a>
+			<li><a href="#mensair"> Sair </a>
+			</ul>
+		<li><a href="#menpontuacoes"> Pontuações </a>
+			<Ul>
+			<li><a href="#menvisualizar"> Visualizar</a>
+			<li><a href="#menlimpar"> Limpar</a>
+			</ul>
+		<li> <a href="#menmostrar"> Mostrar </a>
+			<ul>
+			<li> <a href="#menLetras"> Letras </a>
+			<li> <a href="#menCores"> Cores </a>	
+			<li> <a href="#menLetrasECores"> Letras e cores </a>
+			<li> <a href="#mencomparacoes"> Comparações </a>
+			<li> <a href="#mentempo"> Tempo </a>	
+			<li> <a href="#menlista"> Lista </a>
+			</ul>
+		<li> <a href="#menAcao"> Ação </a>
+			<ul>		
+			<li> <a href="#menPassar"> Passar </a>	
+			<li> <a href="#menSoltar"> Soltar</a>
+			</ul>
+		<li> <a href="#menComparar"> Comparar </a>
+			<ul>		
+			<li> <a href="#menPorLetras"> Por letras </a>	
+			<li> <a href="#menPorCores"> Por cores</a>
+			</ul>
+		<li> <a href="#menAlgoritmos"> Algoritmos </a>
+			<ul>		
+			<li> <a href="#menVerificarDetalhes"> Verificar detalhes </a>	
+			<li> <a href="#menCompararDiretamente"> Comparar diretamente</a>
+			</ul>
+		<li> <a href="#menajuda"> Ajuda </a>
+			<ul>		
+			<li> <a href="#mentopicos"> Tópicos de ajuda </a>	
+			<li> <a href="#menResumo"> Resumo desta tela </a>	
+			<li> <a href="#mensobre"> Sobre </a>
+			</ul>
+		</ul>
+</ul>	
+
+<br><br>
+<li><A href=#comparacaoAlgoritmos>Tela de comparação de algoritmos</a>
+		<ul>
+		<li> <a href="#Resumo"> Resumo </a>
+		<li> <a href="#Algoritmos"> Algoritmos </a>
+			<ul>		
+			<li> <a href="#Sort"> Sort  </a>	
+			<li> <a href="#Sort2"> Sort tipo II </a>	
+			<li> <a href="#Bolha"> Bolha </a>	
+			<li> <a href="#Shell"> Shell sort </a>	
+			<li> <a href="#OrdV2"> OrdV2</a>	
+			</ul>
+		</ul>
+<br><br>
+	
+<li><a href="#duvidas">Dúvidas freqüentes</a>
+	<ul>
+	<li> <a href="#arrastar"> Como arrastar uma caixa ? </a>
+	<li> <a href="#selecionar"> Por que não consigo selecionar uma caixa da primeira fileira ? </a>	
+	<li> <a href="#limparacidente"> Como limpar um valor de uma caixa arrastada por acidente ? </a>	
+	<li> <a href="#cor"> Por que o label "Comparações feitas" e o label "Tempo" mudam de cor ? </a>	
+	<li> <a href="#recordes"> Como posso visualizar os recordes ? </a>	
+	<li> <a href="#movimentarsf"> Como movimentar as caixas da segunda fileira de caixas ? </a>	
+	<li> <a href="#naomovimentarsf"> Por que as caixas da segunda fileira não são movimentadas quando eu pressiono o botão ">>" ou o botão "<<" ? </a>	
+	<li> <a href="#listavisivel"> Por que a Lista "Histórico de comparações" não está visível ? </a>	
+	<li> <a href="#comparacoesvisivel"> Por que o label "Comparações feitas" não está visível ? </a>	
+	<li> <a href="#tempovisivel"> Por que a label "Tempo" não está visível ? </a>	
+	</ul>
+</ul> <br>
+
+<li><a href="#referencia">Referência bibliográfica</a>
+<BR><BR><BR><BR>
+
+<P ALIGN=CENTER><a name=introducao> <font color="000000" size=6>Introdução</font> </P>
+Ordenação é um jogo que envolve raciocínio rápido e atenção. Deve-se, nesta versão 2, colocar 14 caixas (na versão 1 eram 8) em ordem crescente de valor sem saber o valor absoluto das caixas ! Através de sucessivas comparações, você vai desvendando passo a passo os segredos das caixas e as colocando em ordem. Há também a opção de ocultar a lista "Histórico de comparações", o que torna um grande desafio também para a memória. A tarefa de ordenar as caixas deve ser executada de forma rápida e com poucas comparações, o que fará com que seja registrado um recorde no placar de melhores desempenhos. 
+<br> <br><br><br>
+
+<P ALIGN=CENTER><a name=objetivo> <font color="000000" size=6>Qual é o objetivo do jogo?</font> </P>
+
+O objetivo do jogo é colocar todas as caixas em ordem crescente. Toda caixa tem um valor numérico associado a ela, porém estes valores não estão visíveis. Para saber qual a ordem, deve-se comparar as caixas sucessivamente até ter certeza da ordem correta. <br><br><BR><BR>
+
+<P ALIGN=CENTER><a name=novasVersoes> <font color="000000" size=6>Novas versões e alterações</font> </P>
+Versão 2.0: A base é a mesma da versão anterior, com a comparação e a ordenação das caixas, mas diversos recursos foram acrescidos. Resumidamente:
+<ul>
+   <li> Mais caixas, 14 ao invés de 8;
+   <li> Além das cores, as caixas são identificadas através de letras;
+   <li> Gravação de 5 recordes ao invés de 3;
+   <li> Possibilidade selecionar se deseja soltar a caixa arrastada quando soltar o botão ou quando passar por cima do local de destino (há somente esta opção na versão 1);
+   <li> Comparação do desempenho com algoritmos de ordenação, tendo a prossibilidade de verificar os fluxogramas destes algorimos neste arquivo de ajuda;
+</ul>
+
+O arquivo de ajuda foi atualizado, englobando as novas funcionalidades. O jogo em si ficou mais complexo e a dificuldade para estabelecer um recorde é maior.
+<br><br><br><br>
+
+
+<p align=center> <a name="componentes"><font size=6 color=000000>  Tela principal - Componentes </font> </p>
+
+
+<font color=00000>O tabuleiro: </font>
+
+<a name="tabuleiro">O tabuleiro é composto por 28 caixas (divididas em 2 fileiras com 16 caixas), 6 botões, 1 lista, 1 checkbox e 2 labels. <br><br>
+<p align=center> <img src=principal.bmp > </p>
+
+<a name="primeira">A <font color=000000>primeira fileira de caixas </font>contém as 14 caixas que devem ser colocadas em ordem na segunda fileira. A cada caixa está associado um valor numérico que somente  será visível no final do jogo. Para ordená-las, você deve compará-las através do botão "Comparar". <br><br><br>
+
+<a name="segunda">A <font color=000000>segunda fileira de caixas </font>contém 8 caixas que devem receber as caixas da primeira fileira em ordem crescente. Para colocar uma caixa da primeira fileira na segunda deve-se arrastar as caixas da primeira fileira para a segunda, estando o checkbox "Arrastar" marcado. <br><br><br>
+
+<a name="comparar">O botão <font color=000000>"Comparar"</font> é usuado para comparação entre os valores ocultos das caixas. Após selecionar 2 caixas (através de um clique na caixa desejada), caso clique no botão "Comparar" você receberá uma mensagem resultado da comparação dos valores das caixas. Exemplo:<br>
+
+<p align =center><img src=comparacao.bmp><br></p>
+
+Lembre-se que a comparação é feita entre caixas da primeira fileira. O objetivo de selecionar caixas da segunda fileira (fileira das respostas) é deslocá-las através dos botões ">>" e "<<" ou limpá-las através do botão "Limpar".<br><br><br>
+
+
+<a name="limpar">O botão <font color=000000>"Limpar" </font>tem a finalidade de apagar as caixas da segunda fileira (fileira das respostas). Caso você tenha arrastado acidentalmente uma caixa para a segunda fileira e queira apagar a caixa afetada, o botão limpar a apagará caso esteja selecionada.<br><br><br>
+
+
+<a name="terminei!">O botão <font color=000000>"Terminei !" </font>somente deve ser clicado quando você terminar de colocar as caixas em ordem crescente na segunda coluna. Este botão apresentará os valores ocultos de cada caixa e avisará se você colocou a ordem crescente ba segunda fileira (fileira das respostas). Caso não tenha obtido sucesso, você será avisado qual erro ocorreu. Exemplo:<br>
+
+<p align = center> <img src=ordemerrada.bmp> </p><br><br>
+
+<a name="reiniciar">O botão <font color=000000>"Reiniciar"</font> recomeça o jogo. Equivalente a clicar na opção <a href="#menreiniciar">"Reiniciar"</a> do menu "Geral"<br><br><br>	
+
+<a name="reiniciar">O botão <font color=000000>"Algoritmos"</font> mostra a tela de comparação com os algoritmos padronizados de ordenação. É necessário concluir o jogo para visualizar esta tela. Equivalente a clicar na opção <a href="#menreiniciar">"Verificar detalhes"</a> do menu "Algoritmos"<br><br><br>	
+
+<a name="<<">Os botões <font color=000000>">>"</font> e <font color=000000>"<<"</font> deslocam as caixas selecionadas da segunda fileira nas direções representadas por eles. Somente as caixas selecionadas da segunda fileira serão deslocadas. Caso a caixa vizinha esteja preenchida e não selecionada, seu valor será sobreposto pelo valor da caixa deslocada.<br><br><br>
+
+
+<a name="comparacoes">O label <font color=000000>"Comparações feitas"</font> é um contador do número de comparações que você já fez (ao clicar no botão comparar, tendo selecionado 2 caixas). Ele pode ser exibido ou ocultado através da opção <a href="#mentempo">"Comparações"</a> do menu <a href="#menmostrar">"Mostrar"</a> e pode estar com uma das seguintes cores:
+<ul>
+<li> Verde, caso você tenha feito menos comparações que o registrado no melhor recorde;
+<li> Amarelo, caso você tenha feito mais comparações que o registrado no melhor recorde e menos comparações que o registrado no pior recorde;
+<li> Vermelho, caso você tenha feito mais ou o mesmo número de comparações que o registrado no pior recorde.<br><br>
+</ul><br>
+
+<a name="tempo">O label <font color=000000>"Tempo"</font> é um contador do tempo decorrido desde que você iniciou o jogo. O tempo <b>não</b> é medido em segundos e pode ser exibido ou ocultado através da opção <a href="#mentempo">"Tempo"</a> do menu <a href="#menmostrar">"Mostrar"</a>. Ele pode estar com uma das seguintes cores:
+<ul>
+<li> Verde, caso você tenha um valor no contador menor que o registrado no melhor recorde;
+<li> Amarelo, caso você tenha um valor no contador maior que o registrado no melhor recorde e menor que o registrado no pior recorde;
+<li> Vermelho, caso você tenha um valor no contador maior ou igual ao registrado no pior recorde.<br><br>
+</ul><br>
+
+<a name="lista">A lista<font color=000000> "Histórico de comparações"</font> guarda as comparações feitas até o momento. Você pode ocultar ou exibí-la através da opção <a href="#menlista">"Lista"</a> do menu <a href="#menmostrar">"Mostrar"</a>.<br><br><br>
+
+<a name="check">O checkbox <font color=000000>"Arrastar"</font>, quando marcado, faz com que as caixas possam ser arrastadas até a segunda fileira (fileira das respostas). Para arrastar as caixas, marque o checkbox "Arrastar", clique e mantenha pressionado o botão do mouse em uma caixa e a arraste a caixa (através da movimentação do mouse) até a segunda fileira.<br><br><br>
+
+
+<p align = center> <font color=000000 size=6> <a name=menus>Tela principal - Os menus</font> </p>
+
+<font color=000000> <a name=mengeral>Geral</a></font>
+		<Ul>
+		<li> <font color=884444><A NAME=menreiniciar>Reiniciar:</FONT> Reinicia o jogo, zerando os contadores, limpando a lista "Histórico de comandos", colocando as peças na posição original e definindo novos valores a elas. Equivalente ao botão <a href="#reiniciar">"Reiniciar"</a>  e à combinação de teclas <i>CTRL-R</i>;
+		<li><font color=884444><A NAME=mensair>Sair:</a></font> Abondona o jogo atual e sai do programa.
+		</ul><br>
+
+	<font color=000000><A NAME=menpontuacoes>Pontuações </a></fonT>
+		<ul>
+		<li><font color=884444><A NAME=menvisualizar>Visualizar:</a></font> Mostra uma caixa de diálogo com os recordes atuais. Equivalente à combinação de teclas <i>CTRL-P</i>;
+		<li><font color=884444><A NAME=menlimpar>Limpar:</a></font> Permite limpar os recordes;
+		</ul><br>
+
+
+	<font color=000000><A NAME=menmostrar>Mostrar </a></fonT>
+		<ul>
+		<li><font color=884444><A NAME="menLetras">Letras:</a></font>  Exibe, nas caixas, somente as letras como identificadores;
+		<li><font color=884444><A NAME="menCores">Cores:</a></font>  Exibe, nas caixas, somente as cores como identificadores;
+		<li><font color=884444><A NAME="menLetrasECores">Letras e cores:</a></font>  Exibe, nas caixas, as letras e as cores como identificadores;
+		<li><font color=884444><A NAME="mencomparacoes">Comparações:</a></font>  Exibe o label <a href="#comparacoes">"Comparações"</a>, que conta o número de comparações já feitas;
+		<li> <font color=884444><A NAME="mentempo">Tempo:</a></font>	Exibe o label <a href="#tempo">"Tempo"</a>, que conta o tempo decorrido desde o início do jogo. O tempo <b>não</b> é medido em segundos;
+		<li> <font color=884444><A NAME="menlista">Lista:</a></font> Exibe a lista <a href="#lista">"Histórico de comparações"</a>, que mostra o resultado de todas as comparações já feitas.
+		</ul><br>
+
+	<font color=000000><A NAME=menAcao>Ação </a></fonT>
+		<ul>
+		<li><font color=884444><A NAME="menPassar">Passar:</a></font>  Ao arrastar uma caixa da primeira fileira para a segunda, as caixas da segunda fileira recebem o valor da arrastada ao <b>passar por cima</b> a arrastada;
+		<li><font color=884444><A NAME="menSoltar">Soltar:</a></font> Ao arrastar uma caixa da primeira fileira para a segunda, as caixas da segunda fileira recebem o valor da arrastada ao <b>soltar</b> a arrastada;
+		</ul>
+
+<font color=000000><A NAME=menComparar>Comparar </a></fonT>
+		<ul>
+		<li><font color=884444><A NAME="menPorLetras">Por letras:</font> Exibe as mensagens de comparação com as letras das caixas comparadas e a lista de histórico contém as letras das caixas comparadas;
+		<li><font color=884444><A NAME="menPorCores">Por cores:</font>  Exibe as mensagens de comparação com as cores das caixas comparadas e a lista de histórico contém as cores das caixas comparadas;
+		</ul>
+
+	<font color=000000><A NAME=menAlgoritmos>Algoritmos</a></fonT>
+		<ul>
+		<li><font color=884444><A NAME="menVerificarDetalhes">Verificar detalhes:</a></font>  mostra a tela de comparação com os algoritmos padronizados de ordenação. É necessário concluir o jogo para visualizar esta tela.;
+		<li><font color=884444><A NAME="menCompararDiretamente">Comparar diretamente:</a></font> Executa a comparação com os algoritmos padronizados apresentando diretamente a resposta;
+		</ul>
+	 <font color=000000><A NAME="menajuda">Ajuda</a></font>
+		<ul>		
+		<li> <font color=884444><a name="mentopicos"> Tópicos de ajuda: </a></font>Exibe este arquivo de ajuda;	
+		<li> <font color=884444><a name="menResumo"> Resumo desta tela: </a></font>Exibe uma informação resumida da tela;	
+		<li> <font color=884444><a name="mensobre"> Sobre:</a></font> Exibe informações sobre este jogo e seu desenvolvedor.
+		</ul><br>
+	</ul>
+
+<br> <br>
+<p align=center> <a name="comparacaoAlgoritmos"><font size=6 color=000000>  Tela de comparação de algoritmos</font> </p>
+
+<font color=000000><A NAME="#Resumo">Resumo</font>
+Nesta tela pode-se selecionar o algortimo a ser analisado e verificar como este algoritmo ordenou os dados, quantas comparações fez para isto e uma descrição de suas características. É possível também ver uma comparação entre os algoritmos
+<br> <br>
+<font color=000000><A NAME="#Algoritmos">Algoritmos</font>
+Segue abaixo uma descrição resumida das características dos algoritmos de ordenação aqui usados. Os 4 primeiros foram retirados no livro citado na <a href=#referencia>referência bibliográfica</a> e o último desenvolvido juntamente com o programa. 
+<ul>
+	<li> <a name="#Sort"> <u>Sort</u>: </a>	
+O algoritmo "Sort" compara o valor de uma célula com a seguinte, trocando as posições caso não estejam em ordem. A cada troca o processo é reiniciado, ocorrendo a repetição de comparações. Com o decorrer das trocas, os valores mais altos vão sendo fixados nas últimas células até a ordenação completa. É lento e rudimentar. <center><img src=sort.jpg></center><br>
+
+	<li> <a name="#Sort2"> <u>Sort tipo II</u>: </a>	
+Atua "jogando" os valores menores para as primeiras células, começando a comparação pelas primeiras células e indo uma a uma até a última. Muito mais eficiente que o anterior.<center><img src=sort2.jpg></center><br>
+	<li> <a name="#Bolha"> <u>Bolha</u>: </a>	
+Método clássico que inicia comparando as duas primeiras células e coloca-as em ordem; em seguida compara a 3ª com a 2ª e assim por diante, fixando o valor mais alto na última célula. Repete o processo até a penúltima, depois até a antipenúltima. Termina ordenado as colocando os 2 menores valores nas primeiras posições. Sempre executa o mesmo número de comparações para uma mesma quantidade de dados a ser ordenada.<center><img src=bolha.jpg></center><br>
+	<li> <a name="#Shell"> <u>Shell sort</u>: </a>	
+Evita repetições, utilizando muitas comparações indiretas (ex: se A>B e B>C, certamente A>C, não é necessária uma comparação para conluir isto). Uma análise com o fluxograma (do arquivo de ajuda) e a lista abaixo leva ao entendimento do processo em detalhes.<center><img src=shell.jpg></center><br>
+	<li> <a name="#OrdV2"> <u>OrdV2</u>: </a>	
+Algoritmo desenvolvido com este software. Começa comparando os três primeiros valores e os ordena, fazendo uma lista conhecida. A partir daí compara os novos valores sempre com o meio da lista conhecida, inicialmente descobrindo em qual metade (inferior ou superior) o registro deva ser colocado. Tendo registros conhecidos suficientes, vai 'quebrando' a parte da lista descoberta até encontrar a posição correta para o registo desconhecido. Ex: descobre em qual metade colocar o registro, em seguida, em qual metade desta metada (ou seja, em qual 'quarto' da lista conhecida) e assim por diante. Mais detalhes e o fluxograma na próxima versão deste software.
+</ul>
+
+<br><br>
+
+<A NAME=duvidas> <p align=center> <font color=000000 size=6>Dúvidas freqüentes</font></p><br>
+
+<font color = 884444> <a name="arrastar"> Como arrastar uma caixa ?</font><br><br>
+
+Para arrastar uma caixa primeiro você deve marcar o checkbox "Arrastar". Ele ficará com o seguinte aspecto:
+<P align=center><img src=check.bmp></p>
+Em seguida, você deve clicar e segurar uma caixa da primeira fileira. Passando uma caixa da primeira fileira por cima de uma caixa da segunda fileira, você fará com que a caixa da segunda fileira afetada receba o valor da caixa arrastada da primeira fileira.<br><br><BR>
+
+<a name="selecionar"> <font color=884444>Por que não consigo selecionar uma caixa da primeira fileira ?</font><br><br>
+Caso você não consiga selocionar uma caixa da primeira fileira, é provável que o checkbox "Arrastar" esteja marcado. Estando marcado, você somente pode arrastar as caixas, e não selecioná-las. Para selecionar as caixas da primeira fileira, o checkbox "Arrastar" deve estar com o seguinte aspecto:
+<p align=center><img src=chkdesmarcado.bmp></p><br>
+
+
+
+<font color = 884444> <a name="limparacidente">Como limpar um valor de uma caixa arrastada por acidente ? </A></font><br><br>
+Para limpar o valor de uma caixa da segunda fileira, você deve selecioná-la através de um clique. Em seguida, pressione o botão "Limpar".<br><br><br>
+ 
+
+
+<font color = 884444> <a name="cor"> Por que os labels "Comparações feitas" e "Tempo" mudam de cor ? </font><br><br>
+Os labels "Comparações feitas" e "Tempo" mudam de cor conforme o desempenho atual do jogador. Eles podem receber os seguintes valores:
+
+<ul> Label "Comparações feitas"
+<li> Verde, caso você tenha feito menos comparações que o registrado no melhor recorde;
+<li> Amarelo, caso você tenha feito mais comparações que o registrado no melhor recorde e menos comparações que o registrado no pior recorde;
+<li> Vermelho, caso você tenha feito mais ou o mesmo número de comparações que o registrado no pior recorde;
+</ul>
+
+
+<ul> Label "Tempo"
+<li> Verde, caso você tenha um valor no contador menor que o registrado no melhor recorde;
+<li> Amarelo, caso você tenha um valor no contador maior que o registrado no melhor recorde e menor que o registrado no pior recorde;
+<li> Vermelho, caso você tenha um valor no contador maior ou igual ao registrado no pior recorde;
+</ul><br>
+
+<font color=884444> <a name="recordes">Como posso visualizar os recordes ?</font><br><br>
+Para  visualizar os recordes, segure a tecla "Control" e pressione a tecla "P". Você pode também clicar no menu "Pontuações" e em seguida em "Visualizar".<br><br><br>
+
+<font color=884444> <a name="movimentarsf"> Como movimentar as caixas da segunda fileira de caixas ? </font><br><br>
+Para movimentar as caixas da segunda fileira de caixas, selecione a(s) caixa(s) desejada(s) e clique no botão de deslocamento desejado (as opções são os botões ">>" e "<<"). Exemplo:
+<p align=center> <img src=deslocamento1.bmp> </p>
+Clicarei no botão ">>". Veja alguns detelhes:
+<ul>
+<li> Somente as caixas selecionadas e preenchidas serão deslocadas. Neste nosso exemplo três caixas estão selecionadas, mas apenas duas estão preenchidas (veja a figura anterior);
+<li> Caso uma caixa não esteja selecionada e a sua vizinha seja deslocada para seu lugar, ela receberá o valor da vizinha. Compare a figura acima e a figura abaixo e repare que a caixa com a cor laranja não está selecionada e receberá o valor da sua vizinha vermelha.
+</ul>
+
+<p align=center><img src=deslocamento2.bmp></p><br>
+
+<font color=884444> <a name="naomovimentarsf">Por que as caixas da segunda fileira não são movimentadas quando eu pressiono o botão ">>" ou o botão "<<" ?</font><br><br>
+Uma caixas da segunda fileira somente não é movimentada caso ela não esteja selecionada ou ela esteja selecionada e seja a última da fileira em um sentido e queira movimentá-la para aquele sentido, ou seja, a última caixa à esquerda não pode ser movimentada para esquerda e a última caixa à direita não pode ser movimentada para direita. <br> <br><br>
+
+<font color=884444><a name="listavisivel">Por que a lista "Histórico de comparações" não está visível ? </font><br><br>
+Caso a lista "Histórico de comparações" não esteja visível, clique no menu "Mostar" e em seguida em "Lista". <br> <br><br>
+
+<font color=884444> <a name="comparacoesvisivel"> Por que o label "Comparações feitas" não está visível ? </font><br><br>
+Caso a lista "Histórico de comparações" não esteja visível, clique no menu "Mostar" e em seguida em "Comparações". <br> <br><br>
+
+<font color=884444><a name="tempovisivel">Por que o label "Tempo" não está visível ? </font><br><br>
+Caso a lista "Histórico de comparações" não esteja visível, clique no menu "Mostar" e em seguida em "Tempo". <br> <br><br>
+
+<p align=center> <a name="referencia"><font size=6 color=000000>  Referência bibliográfica </font> </p>
+Boa parte das informações dos algoritmos de ordenação foram obtidas com a ajuda do livro "Curso de Programação Basic", de Jorge Trevisan - editora LTC - 2a. Edição. Os fluxogramas e algoritmos Sort, Sort tipo 2, Bolha e Shell Sort foram adaptados para aplicação neste programa. O algoritmo Quick Sort não foi utilizado.
+
+
+
+</font>
+</body>
+</html>
+
+
+
